@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Toolbar的主题 -->
+    <style name="AppbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- 该属性可以设置 Menu 三个小点的颜色 -->
+        <!-- <item name="colorControlNormal">@color/colorAccent</item> -->
+
+        <!--设置 MenuTextAppearance -->
+        <!--<item name="actionMenuTextAppearance">@style/ToolbarMenuTextAppearance</item>-->
+    </style>
+
+    <!-- Toolbar 的 MenuTextAppearance 的样式，不包括折叠起来的menu字体大小-->
+    <!--<style name="ToolbarMenuTextAppearance" parent="TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">40sp</item>
+    </style>-->
+
+
+    <!-- Toolbar 的 TitleTextAppearance 的样式-->
+    <style name="ToolbarTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- 设置标题字体的大小 -->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 设置NoActionBar主题，去掉默认的ActionBar添加我们自己的ToolBar，Toolbar最大的优点是它本身是一个ViewGroup -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 如果使用默认的ActionBar，则这个属性设置ActionBar的背景颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- 这个属性设置标题栏的颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- 这个属性是一些主要控件的颜色，比如ProgressBar、EditText等等 -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme" />
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Squirtle Gank</string>
+    <string name="menu_search">search</string>
+    <string name="menu_setting">setting</string>
+    <string name="welfare">福利</string>
+    <string name="click_back_to_top">单击回到顶部</string>
+    <string name="girls">妹纸</string>
+    <string name="history">时间浏览</string>
+    <string name="category">分类浏览</string>
+    <string name="android">泡在网上的日子</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+</resources>

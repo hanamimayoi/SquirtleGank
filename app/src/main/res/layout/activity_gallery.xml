@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hanami.squirtle.ui.activity.GalleryActivity"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:fitsSystemWindows="true"
+        android:id="@+id/gallery_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="?colorPrimary"
+        app:navigationIcon="@mipmap/back"
+        app:theme="@style/AppbarTheme"
+        app:title="@string/girls">
+
+        <TextView
+            android:id="@+id/position_and_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:textAppearance="@style/ToolbarTitleTextAppearance" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.hanami.squirtle.ui.view.MyViewPager
+        android:id="@+id/gallery_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" />
+
+
+</LinearLayout>

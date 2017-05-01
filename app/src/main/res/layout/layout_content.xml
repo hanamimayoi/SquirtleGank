@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coor_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hanami.squirtle.ui.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:expanded="true"
+        app:theme="@style/AppbarTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="?colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="@string/welfare"
+            app:titleTextAppearance="@style/ToolbarTitleTextAppearance" />
+
+        <ViewStub
+            android:id="@+id/stub_import"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inflatedId="@+id/tab_layout"
+            android:layout="@layout/layout_tab_layout" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            android:id="@+id/swipe_refresh_header"
+            layout="@layout/layout_twitter_header" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingEnd="5dp" />
+
+        <include
+            android:id="@+id/swipe_load_more_footer"
+            layout="@layout/layout_classic_footer" />
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+</android.support.design.widget.CoordinatorLayout>
